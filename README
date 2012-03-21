@@ -1,0 +1,31 @@
+This is a simple test of the most knowing rendering engines from the Ruby, Lua en Golang.
+
+To test ERB from Ruby:
+
+    time ruby test.rb
+
+To test Cosmo from Lua (Kepler project):
+
+    time lua test.lua
+
+    OBS: Need to have the lua and luarocks installed
+
+To test html/template from Golang 
+
+    go build test.go
+    time ./test
+
+The average in my machine, Macbook Pro i5
+
+Ruby - ERB: 
+    real    0m0.078s
+
+Lua - Cosmo:
+    real    0m0.054s
+
+Luajit - Cosmo:
+    real    0m0.041s
+    
+
+Golang - html/package
+    real    0m0.038s

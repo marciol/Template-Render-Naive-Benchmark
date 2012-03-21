@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Ola</title>
+    </head>
+    <body>
+        <% persons.each do |person| %>
+            <p>
+                <% if person[:name] %>
+                    <span>
+                        <%= person[:name] %>
+                    </span>
+                <% end %>
+                <% if person[:last_name] %>
+                    <span>
+                        <%= person[:last_name] %>
+                    </span>
+                <% end %>
+            </p>
+        <% end %>
+    </body>
+</html>
